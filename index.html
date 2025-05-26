@@ -1,8 +1,66 @@
-Hello world!
-<Head>
- <meta charset="utf-8"   
- <meta name+"viewport" content+"width=device=width"
- <title>replit</title>
- <link href+"style.ss rel+"stylesheet" type="text/css" /.>
- <script src="https:/aframe. io/releases/1.1.0/aframe.min.js"></script>
-</Head>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky id="background" src="https://cdn.aframe.io/a-painter/images/sky.jpg" theta-length="90" radius="30"></a-sky>
+      <a-cylinder id="ground" src="https://cdn.aframe.io/a-painter/images/floor.jpg" radius="32" height="0.1"></a-cylinder>
+      
+      <a-assets>
+        <img id="wall" src="horror_floor_12-256x256.png"/>
+      </a-assets>
+      
+      <!-- left to right walls X -->
+      <!--                         X  Y  Z -->
+      <a-box src="#wall" position="-3 0 -3" depth="0.1" height="1"></a-box> <!-- back wall left -->
+      <a-box src="#wall" position="-2 0 -3" depth="0.1" height="1"></a-box> 
+      <a-box src="#wall" position=" 0 0 -3" depth="0.1" height="1"></a-box>
+      <a-box src="#wall" position=" 1 0 -3" depth="0.1" height="1"></a-box> <!-- back wall right -->
+
+      <a-box src="#wall" position="-3 0 -2" depth="0.1" height="1"></a-box>
+      <a-box src="#wall" position="-2 0 -2" depth="0.1" height="1"></a-box> 
+      <a-box src="#wall"position=" 0 0 -2" depth="0.1" height="1"></a-box>
+
+      <a-box src="#wall" position="-1 0 -1" depth="0.1" height="1"></a-box>
+      <a-box src="#wall" position=" 0 0 -1" depth="0.1" height="1"></a-box> 
+
+      <a-box src="#wall" position="-3 0 0" depth="0.1" height="1"></a-box>
+      <a-box src="#wall" position="-1 0 0" depth="0.1" height="1"></a-box> 
+
+      <a-box src="#wall" position="-2 0 1" depth="0.1" height="1"></a-box>
+      <a-box src="#wall" position="-1 0 1" depth="0.1" height="1"></a-box> 
+      <a-box src="#wall" position=" 0 0 1" depth="0.1" height="1"></a-box> 
+
+      <a-box src="#wall" position="-3 0 2" depth="0.1" height="1"></a-box> <!-- front wall left -->
+      <a-box src="#wall" position="-2 0 2" depth="0.1" height="1"></a-box> 
+      <a-box src="#wall" position=" 0 0 2" depth="0.1" height="1"></a-box> 
+      <a-box src="#wall" position=" 1 0 2" depth="0.1" height="1"></a-box> <!-- front wall right --> 
+
+
+      <!-- back to front walls Z -->
+      <!--                           X    Y  Z -->      
+      <a-box src="#wall" position="-3.5 0 -2.5" width="0.1" height="1"></a-box> <!-- left back wall -->
+      <a-box src="#wall" position="-0.5 0 -2.5" width="0.1" height="1"></a-box> 
+      <a-box src="#wall" position=" 1.5 0 -2.5" width="0.1" height="1"></a-box> <!-- right back wall -->
+
+      <a-box src="#wall" position="-3.5 0 -1.5" width="0.1" height="1"></a-box>
+      <a-box src="#wall" position="-1.5 0 -1.5" width="0.1" height="1"></a-box>
+      <a-box src="#wall" position=" 1.5 0 -1.5" width="0.1" height="1"></a-box>
+
+      <a-box src="#wall" position="-3.5 0 -0.5" width="0.1" height="1"></a-box>
+      <a-box src="#wall" position="-2.5 0 -0.5" width="0.1" height="1"></a-box>
+      <a-box src="#wall" position=" 1.5 0 -0.5" width="0.1" height="1"></a-box>
+
+      <a-box src="#wall" position="-3.5 0 0.5" width="0.1" height="1"></a-box>
+      <a-box src="#wall" position="-1.5 0 0.5" width="0.1" height="1"></a-box>
+      <a-box src="#wall" position=" 0.5 0 0.5" width="0.1" height="1"></a-box>
+      <a-box src="#wall"position=" 1.5 0 0.5" width="0.1" height="1"></a-box>
+      
+      <a-box src="#wall" position="-3.5 0 1.5" width="0.1" height="1"></a-box> <!-- left front wall -->
+      <a-box src="#wall" position="-0.5 0 1.5" width="0.1" height="1"></a-box>
+      <a-box src="#wall" position=" 1.5 0 1.5" width="0.1" height="1"></a-box> <!-- right front wall -->
+
+    </a-scene>
+  </body>
+</html>
